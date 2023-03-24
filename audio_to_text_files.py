@@ -13,7 +13,7 @@ import shutil
 from datetime import date
 
 AUDIO_ROOT_FOLDER = "../youtube-audio/"
-CHAT_FOLDER = "./text_files/"
+JSON_OUTPUT_FOLDER = "./json_files/"
 
 def saveFile(filepath, content):
     with open(filepath, 'w', encoding='utf-8') as outfile:
@@ -70,10 +70,10 @@ def save_chunk(txt_file_with_path, chunk_count, payload):
     audio_file_with_path = os.path.join(dir_path, os.path.splitext(txt_file_wo_path)[0] + '.m4a')
     txt_file_wo_path_or_ext = os.path.splitext(txt_file_wo_path)[0]
     # put these chunks in a folder with same name as audio_file without m4a extension
-    chunk_path = CHAT_FOLDER + f"youtube/{youtube_channel}/"
+    chunk_path = JSON_OUTPUT_FOLDER + f"youtube/{youtube_channel}/"
     if not os.path.exists(chunk_path):
         os.makedirs(chunk_path)
-    chunk_path = CHAT_FOLDER + f"youtube/{youtube_channel}/{txt_file_wo_path_or_ext}/"
+    chunk_path = JSON_OUTPUT_FOLDER + f"youtube/{youtube_channel}/{txt_file_wo_path_or_ext}/"
     if not os.path.exists(chunk_path):
         os.makedirs(chunk_path)
     # create the chunk file
