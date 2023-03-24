@@ -3,8 +3,6 @@ from llama_index.embeddings.google_use import GoogleUnivSentEncoderEmbedding
 from llama_index.readers import Document
 import re
 
-
-
 def split_text_into_chunks(text):
     # Split input string into sentences based on punctuation marks
     sentences = re.split('(?<=[.!?]) +', text)
