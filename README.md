@@ -11,7 +11,7 @@ Example searching local youtube transcript text file:
 - Overall less tokens used with OpenAI at less cost.
 
 ## audio_to_text_files.py
-Example using Whisper to convert youtube audio files into text chunk with embeddings
+Example using Whisper to convert youtube audio files into text chunk with Google Universal Sentence Encoder v5 embeddings
 - Assumes you have a folder with youtube m4a audio files in a structure similar to /[youtube-audio]/[channel-name]/[audio-file].m4a
 - You can download single youtube video or whole channel with youtube-dl
 - Command line parameter -f 140 is for m4a audio
