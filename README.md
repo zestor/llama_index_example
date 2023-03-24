@@ -29,3 +29,5 @@ Example using Whisper to convert youtube audio files into text chunk with Google
 ## audio_txt_google_use.py
 Example that takes the output from audio_to_text_files.py and answers a query.
 - assumes you have already used audio_to_text_files.py to process m4a audio files into text chunks with embeddings using google universal sentence encoder v5
+- loads all the output json files into llama_index as documents.
+- uses Google Universal Sentence Encoder v5 to create the embedding for the query.
