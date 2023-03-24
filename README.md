@@ -22,3 +22,7 @@ Example using Whisper to convert youtube audio files into text chunk with Google
 - splits text file into sentence chunks of 500 characters
 - creates embedding using Google Sentence Encoder v5 for text chunk
 - saves text chunks with embedding as json file into specified folder
+
+## audio_txt_google_use.py
+Example that takes the output from audio_to_text_files.py and answers a query.
+- assumes you have already used audio_to_text_files.py to process m4a audio files into text chunks with embeddings using google universal sentence encoder v5
