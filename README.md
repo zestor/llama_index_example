@@ -16,7 +16,7 @@ Example using Whisper to convert youtube audio files into text chunk with Google
 - You can download single youtube video or whole channel with youtube-dl
 - Command line parameter -f 140 is for m4a audio
 - Resource: https://github.com/ytdl-org/youtube-dl
-`youtube-dl --download-archive markets_downloaded.tracker -f 140 -ciw -o "%(title)s.%(ext)s" -v https://www.youtube.com/watch?v=NAZkN7n4WYU`
+> `youtube-dl --download-archive markets_downloaded.tracker -f 140 -ciw -o "%(title)s.%(ext)s" -v https://www.youtube.com/watch?v=NAZkN7n4WYU`
 - converts audio to text file using whisper tiny model
 - splits text file into sentence chunks of 500 characters
 - creates embedding using Google Sentence Encoder v5 for text chunk
