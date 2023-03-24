@@ -13,7 +13,7 @@ Example searching local youtube transcript text file:
 ## audio_to_text_files.py
 Example using Whisper to convert youtube audio files into text chunk with Google Universal Sentence Encoder v5 embeddings
 - Resource: https://github.com/openai/whisper
-- Assumes you have cloned the git repo and have whisper working
+- Assumes you have cloned the git repo and have whisper working and accessible from python
 - Resource: https://github.com/ytdl-org/youtube-dl
 - Assumes you have cloned the git repo for youtube-dl and have youtube-dl working
 - Assumes you have a folder with youtube m4a audio files in a structure similar to /[youtube-audio]/[channel-name]/[audio-file].m4a
